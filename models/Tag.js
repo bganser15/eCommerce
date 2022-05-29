@@ -13,8 +13,9 @@ Tag.init(
       allowNull: false,
     },
     id: {
-      id: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       autoIncrement: true,
+      primaryKey: true,
       allowNull: false,
     },
   },
