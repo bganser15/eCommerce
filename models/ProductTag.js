@@ -11,12 +11,20 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       // this is the equivalent of SQL's `NOT NULL` option
       allowNull: false,
+      references: {
+        model: "product",
+        key: "id",
+      },
     },
     tag_id: {
       // use the special Sequelize DataTypes object provide what type of data it is
       type: DataTypes.INTEGER,
       // this is the equivalent of SQL's `NOT NULL` option
       allowNull: false,
+      references: {
+        model: "tag",
+        key: "id",
+      },
     },
   },
 
