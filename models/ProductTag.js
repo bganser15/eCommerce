@@ -6,6 +6,12 @@ class ProductTag extends Model {}
 
 ProductTag.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     product_id: {
       // use the special Sequelize DataTypes object provide what type of data it is
       type: DataTypes.INTEGER,
