@@ -38,7 +38,6 @@ Product.init(
       type: DataTypes.INTEGER,
       // this is the equivalent of SQL's `NOT NULL` option
       allowNull: false,
-      // instruct that this is the Primary Key
       references: {
         model: "category",
         key: "id",
